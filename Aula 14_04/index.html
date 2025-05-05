@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--<form method="get"> é o método padrão quando não é definido. Usado para consultas-->
+    <!--<form method="post"> o post é usado quando vamos trabalhar com dados sensíveis, como em cadastro-->
+    <form method="post">
+
+        <label>
+            Id:
+            <input type="text" name="idprod" id="idprod" value="1234" readonly disabled>
+            <input type="hidden" name="idprod2" id="idprod2" value="1234" readonly disabled>
+        </label>
+
+        <br>
+        <label>
+            Nome:
+            <input type="text" name="nome" id="nome">
+        </label>
+
+        <br>
+        <label>
+            CPF:
+            <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="xxx.xxx.xxx-xx">
+        </label>
+
+        <br>
+        <label>
+            Dependentes:
+            <input type="number" name="dependentes" id="dependentes" min="0" max="10">
+        </label>
+
+        <br>
+        <label>
+            <!-- Com o max dá pra definir uma data máxima para ser selecionada no calendário -->
+            Data de nascimento 1:
+            <input type="date" name="dataNasc" id="dataNasc" max="2025-04-14">
+        </label>
+
+        <br>
+        <label>
+            Data de nascimento 2:
+            <input type="datetime-local" name="dataNasc2" id="dataNasc2" max="2025-04-14T19:50">
+        </label>
+
+        <br>
+        <label>
+            Genero:
+        </label>    
+            <input type="radio" name="Genero" id="Masc" value="M">
+            <label for="Masc">Masculino</label>
+        <label>
+        <label>
+            <input type="radio" name="Genero" id="Fem" value="F">
+            <label for="Fem">Feminino</label>
+        </label>    
+        <label>
+            <input type="radio" name="Genero" id="Outros" value="O">
+            <label for="Fem">Outros</label>
+        </label>
+
+        <br>
+        <label>
+            Email:
+            <input type="email" name="email" id="email"> 
+        </label>
+
+        <br>
+        <label>
+            Senha:
+            <input type="password" name="senha" id="senha">
+        </label>
+
+        <br>
+        <label>
+            Área de interesse:
+        </label>
+        <label>
+            <input type="checkbox" name="Tech" id="tech" value="tech" checked disabled>Tecnologia
+        </label>   
+        <label>
+            <input type="checkbox" name="Fut" id="fut" value="tech">Futebol
+        </label> 
+        <label>  
+            <input type="checkbox" name="culinaria" id="culinaria" value="culinaria">Culinaria
+        </label>
+
+        <br>
+        <label>
+            Anexar arquivo:
+            <!-- accept="" controla os arquivos que podem ser selecionados-->
+            <input type="file" name="file" id="file" accept="image/*">
+        </label>
+
+        <br>
+        <label>
+            Sugestões e críticas:
+            <textarea name="sugestoes" id="sugestoes" rols="20" cols="70" maxlength="150"></textarea>
+        </label>
+
+        <br>
+        <label>
+            Cor favorita:
+            <input type="color" name="color" id="color">
+        </label>
+
+        <br>
+        <label>
+            Volume:
+            <input type="range" name="range" id="range" value="29">
+        </label>
+
+        <br>
+        <input type="reset" value="Resetar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

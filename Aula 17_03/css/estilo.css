@@ -1,0 +1,55 @@
+/*
+    .classe{
+        propriedade1 : valo;
+        propriedade2 : valor;
+    }
+    #id{
+        propriedade1 : valo;
+        propriedade2 : valor;
+    }
+*/
+
+.circle{
+    list-style-type: circle;
+}
+.disc{
+    list-style-type: disc;
+}
+.square{
+    list-style-type: square;
+}
+nav{
+    border: 1px solid #000;
+    width: 120px;
+    height: 186px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    border-bottom: 1px solid #000;
+    height: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    border-left: 8px solid #f00;
+    padding-left: 15px;
+    display: block;
+    line-height: 30px;
+}
+/*
+Mão sobre o elemento
+*/
+nav ul li a:hover{
+    background-color: #f00;
+    border-left: 8px solid #ff0;
+    color: #fff;
+}
+nav ul li a:visited{
+    color:darkgreen;
+}
+nav ul li a:active{
+    color:#ccc;
+}
